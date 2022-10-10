@@ -1,0 +1,47 @@
+.container {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+// flex 
+
+.flex {
+    display: flex;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-middle {
+    align-items: center;
+}
+
+.flex-end {
+    justify-content: end;
+}
+
+// flex
+
+
+// font-weight
+
+.fw-500 {
+    font-weight: 500;
+}
+
+
+.fw-600 {
+    font-weight: 600;
+}
+
+
+.fw-700 {
+    font-weight: 700;
+}
+
+// font-weight
