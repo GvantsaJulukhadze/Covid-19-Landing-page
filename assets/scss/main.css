@@ -168,6 +168,13 @@ header .logo h1 {
   padding: 21px 49px;
 }
 
+.about-covid-box p {
+  color: #4B4F51;
+  font-size: 20px;
+  line-height: 43px;
+  margin-bottom: 60px;
+}
+
 h4 {
   font-size: 29px;
   line-height: 35.96px;
@@ -182,12 +189,6 @@ h3 {
   color: #035755;
 }
 
-p {
-  color: #4B4F51;
-  font-size: 20px;
-  line-height: 43px;
-}
-
 .contagion {
   margin-bottom: 148px;
 }
@@ -196,6 +197,7 @@ p {
 .contagion h4,
 .contagion p {
   text-align: center;
+  margin-bottom: 31px;
 }
 
 .contagion-listing {
@@ -213,6 +215,13 @@ p {
 .contagion-listing li {
   width: 33.333%;
   padding-left: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .contagion-listing a {
@@ -224,6 +233,7 @@ p {
   border-radius: 10px;
   padding: 65px;
   min-height: 575px;
+  height: 100%;
 }
 
 .contagion-listing h5 {
@@ -242,5 +252,18 @@ p {
 
 .contagion-listing img {
   margin-bottom: 67px;
+}
+
+.symptomps h3,
+.symptomps h4,
+.symptomps p {
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.symptomps img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=main.css.map */

@@ -123,6 +123,15 @@ header {
         border-radius: 65px;
         padding: 21px 49px;
     }
+
+
+    p {
+        color: #4B4F51;
+        font-size: 20px;
+        line-height: 43px;
+        margin-bottom: 60px;
+
+    }
 }
 
 h4 {
@@ -140,12 +149,6 @@ h3 {
     color: #035755;
 }
 
-p {
-    color: #4B4F51;
-    font-size: 20px;
-    line-height: 43px;
-
-}
 
 .contagion {
 
@@ -153,6 +156,8 @@ p {
     h4,
     p {
         text-align: center;
+        margin-bottom: 31px;
+
     }
 
     margin-bottom: 148px;
@@ -171,6 +176,9 @@ p {
     li {
         width: 33.333%;
         padding-left: 30px;
+        flex-direction: column;
+        flex: 1;
+
 
 
 
@@ -184,6 +192,8 @@ p {
         border-radius: 10px;
         padding: 65px;
         min-height: 575px;
+        height: 100%;
+
 
 
 
@@ -205,5 +215,22 @@ p {
 
     img {
         margin-bottom: 67px;
+    }
+}
+
+.symptomps {
+
+    h3,
+    h4,
+    p {
+        text-align: center;
+        margin-bottom: 31px;
+
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

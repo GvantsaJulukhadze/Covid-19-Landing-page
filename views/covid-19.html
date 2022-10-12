@@ -75,35 +75,35 @@
                         <h1 class="fw-700">Covid - 19</h1>
                     </a>
                 </div>
-                <div class="flex flex-middle">
+                <nav class="flex flex-middle">
                     <ul class="flex flex-middle main-nav">
                         <li>
-                            <a href="">
+                            <a href="#Overview">
                                 Overview
                             </a>
                             <span class="red-dot"></span>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#Contagion">
                                 Contagion
                             </a>
                             <span class="red-dot"></span>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#Symptoms">
                                 Symptoms
                             </a>
                             <span class="red-dot"></span>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#Prevention">
                                 Prevention
                             </a>
                             <span class="red-dot"></span>
                         </li>
                     </ul>
-                    <a class="contact-button fw-500" href="">Contact</a>
-                </div>
+                    <a class="contact-button fw-500" href="#Contact">Contact</a>
+                </nav>
             </div>
         </div>
     </header>
@@ -604,7 +604,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-covid">
+        <section class="about-covid" id="Overview">
             <div class="flex flex-middle">
                 <div>
                     <svg width="966" height="932" viewBox="0 0 966 932" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -824,7 +824,7 @@
                 </div>
             </div>
         </section>
-        <section class="contagion">
+        <section class="contagion" id="Contagion">
             <div class="container">
                 <h4 class="fw-700">
                     Covid-19
@@ -866,7 +866,49 @@
                 </ul>
             </div>
         </section>
+        <section class="symptomps" id="Symptoms">
+            <div class="container">
+                <h4 class="fw-700">
+                    Covid-19
+                </h4>
+                <h3 class="fw-700">
+                    Symptomps
+                </h3>
+                <p>
+                    Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly
+                    identified type has caused a recent outbreak of respiratory
+                </p>
+                <img src="../assets/img/symptomps.jpg" alt="">
+            </div>
+        </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
 </body>
 
 </html>
