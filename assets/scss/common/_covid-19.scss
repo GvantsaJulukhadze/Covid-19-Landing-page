@@ -310,3 +310,53 @@ h3 {
     text-transform: capitalize;
     color: #4B4F51;
 }
+
+
+.question {
+    p {
+        font-size: 64px;
+        line-height: 77px;
+        text-align: center;
+        color: #0C6C44;
+
+    }
+
+    margin-bottom: 143px;
+
+}
+
+.question-form {
+    margin-top: 62px;
+
+    input {
+        background: #FFFFFF;
+        box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
+        border-radius: 57px;
+        padding: 44px;
+        border: none;
+        width: 100%;
+    }
+
+    button {
+
+        background: #F44A45;
+        border-radius: 157px;
+        padding: 26px 80px;
+        border: none;
+        color: #FFFFFF;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+}
+
+.absolute {
+    position: absolute;
+    right: 12px;
+    top: 15px;
+
+}
+
+.relative {
+    position: relative;
+}
