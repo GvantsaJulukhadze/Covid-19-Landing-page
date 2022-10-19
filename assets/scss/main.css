@@ -95,11 +95,21 @@ Commons
   font-weight: 700;
 }
 
+.body {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-29.64%, rgba(255, 255, 255, 0)), color-stop(45.66%, #FFF8F8), color-stop(45.66%, #B57474));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) -29.64%, #FFF8F8 45.66%, #B57474 45.66%);
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
 header {
   padding: 40px;
 }
 
-header .logo h1 {
+.logo h1 {
   font-size: 19px;
   line-height: 25.14px;
   color: #035755;
@@ -254,6 +264,8 @@ h3 {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contagion-listing ul {
@@ -274,6 +286,12 @@ h3 {
           flex: 1;
 }
 
+@media (max-width: 960px) {
+  .contagion-listing li {
+    width: 50%;
+  }
+}
+
 .contagion-listing a {
   text-align: center;
   display: block;
@@ -284,6 +302,13 @@ h3 {
   padding: 65px;
   min-height: 575px;
   height: 100%;
+  border-bottom: 5px solid #FFFFFF;
+}
+
+@media (max-width: 1440px) {
+  .contagion-listing a {
+    padding: 35px;
+  }
 }
 
 .contagion-listing a:hover {
@@ -306,6 +331,7 @@ h3 {
 
 .contagion-listing img {
   margin-bottom: 67px;
+  max-width: 100%;
 }
 
 .symptomps {
@@ -333,22 +359,22 @@ h3 {
   color: #4B4F51;
 }
 
-.what-should-we-do h3,
-.what-should-we-do h4,
-.what-should-we-do p {
+.Prevention h3,
+.Prevention h4,
+.Prevention p {
   text-align: center;
   margin-bottom: 31px;
 }
 
-.what-should-we-do li {
+.Prevention li {
   margin-bottom: 130px;
 }
 
-.what-should-we-do .what-should-we-do-header {
+.Prevention .Prevention {
   margin-bottom: 71px;
 }
 
-.what-should-we-do p {
+.Prevention p {
   margin-bottom: 71px;
 }
 
@@ -399,7 +425,7 @@ h3 {
   padding-left: 150px;
 }
 
-.what-should-we-do-header-p {
+.Prevention-p {
   font-size: 18px;
   line-height: 215%;
   text-transform: capitalize;
@@ -429,6 +455,9 @@ h3 {
   padding: 44px;
   border: none;
   width: 100%;
+  font-size: 22px;
+  line-height: 26px;
+  color: #758681;
 }
 
 .question-form button {
@@ -449,5 +478,24 @@ h3 {
 
 .relative {
   position: relative;
+}
+
+.social-listing {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -40px;
+}
+
+.social-listing li {
+  padding-left: 40px;
+}
+
+footer p {
+  font-size: 20px;
+  line-height: 25px;
+  color: #415E56;
+  text-align: center;
+  margin-top: 67px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
